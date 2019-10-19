@@ -1,0 +1,5 @@
+Added Component: Designator=P3(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetJ2_5 Pin=P3-1
+Added Member To Class: ClassName=Slave v2 Member=Component P3 BigHole
+Added Room: Name=Slave v2

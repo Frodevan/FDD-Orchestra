@@ -1,0 +1,53 @@
+Added Component: Designator=5V1(MEDHOLE)
+Added Component: Designator=5V2(MEDHOLE)
+Added Component: Designator=12V1(MEDHOLE)
+Added Component: Designator=12V2(MEDHOLE)
+Added Component: Designator=C\E\1\0\(BigHole)
+Added Component: Designator=C\E\1\(BigHole)
+Added Component: Designator=C\E\2\(BigHole)
+Added Component: Designator=C\E\3\(BigHole)
+Added Component: Designator=C\E\4\(BigHole)
+Added Component: Designator=C\E\5\(BigHole)
+Added Component: Designator=C\E\6\(BigHole)
+Added Component: Designator=C\E\7\(BigHole)
+Added Component: Designator=C\E\8\(BigHole)
+Added Component: Designator=C\E\9\(BigHole)
+Added Component: Designator=CLK(MEDHOLE)
+Added Component: Designator=DI(MEDHOLE)
+Added Component: Designator=GND1(MEDHOLE)
+Added Component: Designator=GND2(MEDHOLE)
+Added Component: Designator=GND3(MEDHOLE)
+Added Component: Designator=GND4(MEDHOLE)
+Added Component: Designator=INT(MEDHOLE)
+Added Component: Designator=SCL(MEDHOLE)
+Added Component: Designator=Support1(MEDHOLE)
+Added Component: Designator=Support2(MEDHOLE)
+Added Component: Designator=Support3(MEDHOLE)
+Added Component: Designator=Support4(MEDHOLE)
+Added Member To Class: ClassName=Slave v2 Member=Component 5V1 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 5V2 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 12V1 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 12V2 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\1\0\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\1\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\2\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\3\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\4\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\5\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\6\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\7\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\8\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component C\E\9\ BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component CLK BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component DI BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component GND1 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component GND2 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component GND3 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component GND4 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component INT BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component SCL BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component Support1 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component Support2 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component Support3 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component Support4 BigHole
+Added Room: Name=Slave v2

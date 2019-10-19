@@ -1,0 +1,54 @@
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(MEDHOLE)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=?(BigHole)
+Added Component: Designator=CLK(MEDHOLE)
+Added Component: Designator=DI(MEDHOLE)
+Added Component: Designator=INT(MEDHOLE)
+Added Component: Designator=SCL(MEDHOLE)
+Added Pin To Net: NetName=Net?_1 Pin=U1-3
+Added Net: Name=Net?_1
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component ? BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component CLK BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component DI BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component INT BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component SCL BigHole

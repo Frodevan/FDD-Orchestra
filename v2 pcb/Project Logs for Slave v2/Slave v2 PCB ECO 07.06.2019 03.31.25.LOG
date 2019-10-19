@@ -1,0 +1,80 @@
+Change Component Comment : Designator=C1 Old Comment=C1 New Comment=Component_1
+Added Component: Designator=1(MEDHOLE)
+Added Component: Designator=2(MEDHOLE)
+Added Component: Designator=3(MEDHOLE)
+Added Component: Designator=4(MEDHOLE)
+Added Component: Designator=5(MEDHOLE)
+Added Component: Designator=6(MEDHOLE)
+Added Component: Designator=7(MEDHOLE)
+Added Component: Designator=8(MEDHOLE)
+Added Component: Designator=9(MEDHOLE)
+Added Component: Designator=10(MEDHOLE)
+Added Component: Designator=11(MEDHOLE)
+Added Component: Designator=12(MEDHOLE)
+Added Component: Designator=13(BigHole)
+Added Component: Designator=14(BigHole)
+Added Component: Designator=15(BigHole)
+Added Component: Designator=16(BigHole)
+Added Component: Designator=17(BigHole)
+Added Component: Designator=18(BigHole)
+Added Component: Designator=19(BigHole)
+Added Component: Designator=20(BigHole)
+Added Component: Designator=21(BigHole)
+Added Component: Designator=22(BigHole)
+Added Pin To Net: NetName=VCC Pin=2-1
+Added Pin To Net: NetName=GND Pin=3-1
+Added Pin To Net: NetName=GND Pin=4-1
+Added Pin To Net: NetName=VCC Pin=6-1
+Added Pin To Net: NetName=GND Pin=7-1
+Added Pin To Net: NetName=GND Pin=8-1
+Added Pin To Net: NetName=Net1_1 Pin=1-1
+Added Pin To Net: NetName=Net1_1 Pin=5-1
+Added Net: Name=Net1_1
+Added Pin To Net: NetName=Net9_1 Pin=9-1
+Added Pin To Net: NetName=Net9_1 Pin=U1-2
+Added Net: Name=Net9_1
+Added Pin To Net: NetName=Net10_1 Pin=10-1
+Added Pin To Net: NetName=Net10_1 Pin=U1-5
+Added Net: Name=Net10_1
+Added Pin To Net: NetName=Net11_1 Pin=11-1
+Added Pin To Net: NetName=Net11_1 Pin=J2-4
+Added Pin To Net: NetName=Net11_1 Pin=U1-7
+Added Net: Name=Net11_1
+Added Pin To Net: NetName=Net12_1 Pin=12-1
+Added Pin To Net: NetName=Net12_1 Pin=J2-3
+Added Net: Name=Net12_1
+Added Pin To Net: NetName=Net13_1 Pin=13-1
+Added Pin To Net: NetName=Net13_1 Pin=14-1
+Added Pin To Net: NetName=Net13_1 Pin=15-1
+Added Pin To Net: NetName=Net13_1 Pin=16-1
+Added Pin To Net: NetName=Net13_1 Pin=17-1
+Added Pin To Net: NetName=Net13_1 Pin=18-1
+Added Pin To Net: NetName=Net13_1 Pin=19-1
+Added Pin To Net: NetName=Net13_1 Pin=20-1
+Added Pin To Net: NetName=Net13_1 Pin=21-1
+Added Pin To Net: NetName=Net13_1 Pin=22-1
+Added Pin To Net: NetName=Net13_1 Pin=U1-3
+Added Net: Name=Net13_1
+Added Member To Class: ClassName=Slave v2 Member=Component 1 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 2 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 3 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 4 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 5 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 6 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 7 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 8 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 9 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 10 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 11 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 12 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 13 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 14 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 15 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 16 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 17 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 18 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 19 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 20 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 21 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component 22 BigHole
+Added Member To Class: ClassName=Slave v2 Member=Component J1 Component_1

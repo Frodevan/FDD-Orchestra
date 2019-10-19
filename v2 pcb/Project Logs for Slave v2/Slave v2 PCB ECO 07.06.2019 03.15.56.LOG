@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-7
+Removed Pin From Net: NetName=GND Pin=J1-9
+Removed Pin From Net: NetName=GND Pin=J1-11
+Removed Pin From Net: NetName=GND Pin=J1-13
+Removed Pin From Net: NetName=GND Pin=J1-15
+Removed Pin From Net: NetName=GND Pin=J1-17
+Removed Pin From Net: NetName=GND Pin=J1-19
+Removed Pin From Net: NetName=GND Pin=J1-21
+Removed Pin From Net: NetName=GND Pin=J1-23
+Removed Pin From Net: NetName=GND Pin=J1-25
+Removed Pin From Net: NetName=GND Pin=J1-27
+Removed Pin From Net: NetName=GND Pin=J1-29
+Removed Pin From Net: NetName=GND Pin=J1-31
+Removed Pin From Net: NetName=GND Pin=J1-33
+Removed Member From Class: ClassName=Slave v2 Member=J1
+Added Pin To Net: NetName=Net*_12 Pin=U1-12
+Added Net: Name=Net*_12
+Added Pin To Net: NetName=Net*_16 Pin=U1-11
+Added Net: Name=Net*_16
+Added Pin To Net: NetName=Net*_18 Pin=U1-10
+Added Net: Name=Net*_18
+Added Pin To Net: NetName=Net*_20 Pin=J2-1
+Added Pin To Net: NetName=Net*_20 Pin=U1-8
+Added Net: Name=Net*_20

@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=U? Old Footprint=TQFP80P900X900X120-32N New Footprint=TQFP80P900X900X120
+Added Member To Class: ClassName=Master v2 Member=Component U? =navn
+Added Member To Class: ClassName=Master v2 Member=Component U? ATMEGA168V-10AI
+Added Member To Class: ClassName=Master v2 Member=Component U? ATMEGA168V-10AI
+Added Room: Name=Master v2

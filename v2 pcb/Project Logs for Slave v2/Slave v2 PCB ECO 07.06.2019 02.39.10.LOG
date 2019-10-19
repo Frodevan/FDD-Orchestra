@@ -1,0 +1,55 @@
+Added Component: Designator=5V1(MEDHOLE)
+Added Component: Designator=5V2(MEDHOLE)
+Added Component: Designator=12V1(MEDHOLE)
+Added Component: Designator=12V2(MEDHOLE)
+Added Component: Designator=C1(200mil)
+Added Component: Designator=C\E\1\0\(BigHole)
+Added Component: Designator=C\E\1\(BigHole)
+Added Component: Designator=C\E\2\(BigHole)
+Added Component: Designator=C\E\3\(BigHole)
+Added Component: Designator=C\E\4\(BigHole)
+Added Component: Designator=C\E\5\(BigHole)
+Added Component: Designator=C\E\6\(BigHole)
+Added Component: Designator=C\E\7\(BigHole)
+Added Component: Designator=C\E\8\(BigHole)
+Added Component: Designator=C\E\9\(BigHole)
+Added Component: Designator=CLK(MEDHOLE)
+Added Component: Designator=DI(MEDHOLE)
+Added Component: Designator=GND1(MEDHOLE)
+Added Component: Designator=GND2(MEDHOLE)
+Added Component: Designator=GND3(MEDHOLE)
+Added Component: Designator=GND4(MEDHOLE)
+Added Component: Designator=INT(MEDHOLE)
+Added Component: Designator=SCL(MEDHOLE)
+Added Component: Designator=Support1(MEDHOLE)
+Added Component: Designator=Support2(MEDHOLE)
+Added Component: Designator=Support3(MEDHOLE)
+Added Component: Designator=Support4(MEDHOLE)
+Added Component: Designator=U1(DIP14)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=U1-14
+Added Net: Name=GND
+Added Net: Name=Net12V1_1
+Added Pin To Net: NetName=NetC\E\1\0\_1 Pin=U1-3
+Added Net: Name=NetC\E\1\0\_1
+Added Pin To Net: NetName=NetCLK_1 Pin=U1-2
+Added Net: Name=NetCLK_1
+Added Pin To Net: NetName=NetDI_1 Pin=U1-7
+Added Net: Name=NetDI_1
+Added Pin To Net: NetName=NetINT_1 Pin=U1-5
+Added Net: Name=NetINT_1
+Added Pin To Net: NetName=NetJ1_12 Pin=U1-12
+Added Net: Name=NetJ1_12
+Added Pin To Net: NetName=NetJ1_16 Pin=U1-11
+Added Net: Name=NetJ1_16
+Added Pin To Net: NetName=NetJ1_18 Pin=U1-10
+Added Net: Name=NetJ1_18
+Added Pin To Net: NetName=NetJ1_20 Pin=U1-8
+Added Net: Name=NetJ1_20
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_5 Pin=U1-4
+Added Net: Name=NetJ2_5
+Added Pin To Net: NetName=VCC Pin=U1-1
+Added Net: Name=VCC
+Added Class: Name=Slave v2
+Added Room: Name=Slave v2

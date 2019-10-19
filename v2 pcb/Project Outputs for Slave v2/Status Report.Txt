@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [4xboard.PcbDoc]
+   Generated File[4xboard.TXT]
+   Generated File[4xboard.LDP]
+   Generated File[4xboard.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 6:51:56 PM On 6/9/2019

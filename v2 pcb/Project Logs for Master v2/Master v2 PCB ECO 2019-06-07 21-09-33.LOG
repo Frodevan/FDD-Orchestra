@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=23 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=24 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=25 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=26 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=27 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=28 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=29 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=30 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=31 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Footprint: Designator=32 Old Footprint=BigHole New Footprint=MEDHOLE
+Change Component Designator: OldDesignator=GND NewDesignator=GND2
+Added Room: Name=Master v2

@@ -1,0 +1,149 @@
+Added Component: Designator=5V(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=12V(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=23(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=24(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=25(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=26(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=27(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=28(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=29(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=30(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=31(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=32(BigHole)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C1(200mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(200mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C3(200mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CLK(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=GND1(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=GND2(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=INT(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(HEADER6)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MOSI(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RESET(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RX(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SCK(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SPARE1(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SPARE2(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TX(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U?(TQFP80P900X900X120-32N)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XTAL1(200mil)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=GND1-1
+Added Pin To Net: NetName=GND Pin=GND2-1
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-5
+Added Pin To Net: NetName=GND Pin=U?-21
+Added Net: Name=GND
+Added Pin To Net: NetName=Net23_1 Pin=23-1
+Added Pin To Net: NetName=Net23_1 Pin=U?-23
+Added Net: Name=Net23_1
+Added Pin To Net: NetName=Net24_1 Pin=24-1
+Added Pin To Net: NetName=Net24_1 Pin=U?-24
+Added Net: Name=Net24_1
+Added Pin To Net: NetName=Net25_1 Pin=25-1
+Added Pin To Net: NetName=Net25_1 Pin=U?-25
+Added Net: Name=Net25_1
+Added Pin To Net: NetName=Net26_1 Pin=26-1
+Added Pin To Net: NetName=Net26_1 Pin=U?-26
+Added Net: Name=Net26_1
+Added Pin To Net: NetName=Net27_1 Pin=27-1
+Added Pin To Net: NetName=Net27_1 Pin=U?-27
+Added Net: Name=Net27_1
+Added Pin To Net: NetName=Net28_1 Pin=28-1
+Added Pin To Net: NetName=Net28_1 Pin=U?-28
+Added Net: Name=Net28_1
+Added Pin To Net: NetName=Net29_1 Pin=29-1
+Added Pin To Net: NetName=Net29_1 Pin=U?-32
+Added Net: Name=Net29_1
+Added Pin To Net: NetName=Net30_1 Pin=30-1
+Added Pin To Net: NetName=Net30_1 Pin=U?-1
+Added Net: Name=Net30_1
+Added Pin To Net: NetName=Net31_1 Pin=31-1
+Added Pin To Net: NetName=Net31_1 Pin=U?-2
+Added Net: Name=Net31_1
+Added Pin To Net: NetName=Net32_1 Pin=32-1
+Added Pin To Net: NetName=Net32_1 Pin=U?-9
+Added Net: Name=Net32_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=U?-7
+Added Pin To Net: NetName=NetC2_2 Pin=XTAL1-1
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=U?-8
+Added Pin To Net: NetName=NetC3_2 Pin=XTAL1-2
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetCLK_1 Pin=CLK-1
+Added Pin To Net: NetName=NetCLK_1 Pin=U?-12
+Added Net: Name=NetCLK_1
+Added Pin To Net: NetName=NetINT_1 Pin=INT-1
+Added Pin To Net: NetName=NetINT_1 Pin=U?-14
+Added Net: Name=NetINT_1
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=U?-16
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=SCK-1
+Added Pin To Net: NetName=NetJ1_3 Pin=U?-17
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_4 Pin=MOSI-1
+Added Pin To Net: NetName=NetJ1_4 Pin=U?-15
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_5 Pin=RESET-1
+Added Pin To Net: NetName=NetJ1_5 Pin=U?-29
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetRX_1 Pin=RX-1
+Added Pin To Net: NetName=NetRX_1 Pin=U?-30
+Added Net: Name=NetRX_1
+Added Pin To Net: NetName=NetSPARE1_1 Pin=SPARE1-1
+Added Pin To Net: NetName=NetSPARE1_1 Pin=U?-10
+Added Net: Name=NetSPARE1_1
+Added Pin To Net: NetName=NetSPARE2_1 Pin=SPARE2-1
+Added Pin To Net: NetName=NetSPARE2_1 Pin=U?-11
+Added Net: Name=NetSPARE2_1
+Added Pin To Net: NetName=NetTX_1 Pin=TX-1
+Added Pin To Net: NetName=NetTX_1 Pin=U?-31
+Added Net: Name=NetTX_1
+Added Pin To Net: NetName=VCC Pin=5V-1
+Added Pin To Net: NetName=VCC Pin=C1-2
+Added Pin To Net: NetName=VCC Pin=J1-2
+Added Pin To Net: NetName=VCC Pin=U?-4
+Added Pin To Net: NetName=VCC Pin=U?-6
+Added Pin To Net: NetName=VCC Pin=U?-18
+Added Pin To Net: NetName=VCC Pin=U?-20
+Added Net: Name=VCC
+Added Class: Name=Master v2
+Added Room: Name=Master v2

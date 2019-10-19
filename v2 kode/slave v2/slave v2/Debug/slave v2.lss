@@ -1,0 +1,864 @@
+
+slave v2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000e70  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000018  00800060  00000e70  00000f04  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00800078  00800078  00000f1c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000f1c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000f4c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000a8  00000000  00000000  00000f88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000955  00000000  00000000  00001030  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000663  00000000  00000000  00001985  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000509  00000000  00000000  00001fe8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001ac  00000000  00000000  000024f4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000003e2  00000000  00000000  000026a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000002e7  00000000  00000000  00002a82  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000078  00000000  00000000  00002d69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	10 c6       	rjmp	.+3104   	; 0xc22 <__ctors_end>
+   2:	05 c7       	rjmp	.+3594   	; 0xe0e <__vector_1>
+   4:	29 c6       	rjmp	.+3154   	; 0xc58 <__bad_interrupt>
+   6:	5d c6       	rjmp	.+3258   	; 0xcc2 <__vector_3>
+   8:	27 c6       	rjmp	.+3150   	; 0xc58 <__bad_interrupt>
+   a:	26 c6       	rjmp	.+3148   	; 0xc58 <__bad_interrupt>
+   c:	25 c6       	rjmp	.+3146   	; 0xc58 <__bad_interrupt>
+   e:	24 c6       	rjmp	.+3144   	; 0xc58 <__bad_interrupt>
+  10:	e1 c6       	rjmp	.+3522   	; 0xdd4 <__vector_8>
+  12:	22 c6       	rjmp	.+3140   	; 0xc58 <__bad_interrupt>
+  14:	21 c6       	rjmp	.+3138   	; 0xc58 <__bad_interrupt>
+  16:	20 c6       	rjmp	.+3136   	; 0xc58 <__bad_interrupt>
+  18:	1f c6       	rjmp	.+3134   	; 0xc58 <__bad_interrupt>
+  1a:	1e c6       	rjmp	.+3132   	; 0xc58 <__bad_interrupt>
+  1c:	1d c6       	rjmp	.+3130   	; 0xc58 <__bad_interrupt>
+  1e:	1c c6       	rjmp	.+3128   	; 0xc58 <__bad_interrupt>
+  20:	3f c6       	rjmp	.+3198   	; 0xca0 <__vector_16>
+
+00000022 <__trampolines_end>:
+  22:	8c 7e       	andi	r24, 0xEC	; 236
+  24:	7d 7e       	andi	r23, 0xED	; 237
+  26:	6f 7e       	andi	r22, 0xEF	; 239
+  28:	60 7e       	andi	r22, 0xE0	; 224
+  2a:	52 7e       	andi	r21, 0xE2	; 226
+  2c:	43 7e       	andi	r20, 0xE3	; 227
+  2e:	34 7e       	andi	r19, 0xE4	; 228
+  30:	26 7e       	andi	r18, 0xE6	; 230
+  32:	17 7e       	andi	r17, 0xE7	; 231
+  34:	09 7e       	andi	r16, 0xE9	; 233
+  36:	fa 7d       	andi	r31, 0xDA	; 218
+  38:	ec 7d       	andi	r30, 0xDC	; 220
+  3a:	dd 7d       	andi	r29, 0xDD	; 221
+  3c:	cf 7d       	andi	r28, 0xDF	; 223
+  3e:	c0 7d       	andi	r28, 0xD0	; 208
+  40:	b1 7d       	andi	r27, 0xD1	; 209
+  42:	a3 7d       	andi	r26, 0xD3	; 211
+  44:	94 7d       	andi	r25, 0xD4	; 212
+  46:	86 7d       	andi	r24, 0xD6	; 214
+  48:	77 7d       	andi	r23, 0xD7	; 215
+  4a:	69 7d       	andi	r22, 0xD9	; 217
+  4c:	5a 7d       	andi	r21, 0xDA	; 218
+  4e:	4c 7d       	andi	r20, 0xDC	; 220
+  50:	3d 7d       	andi	r19, 0xDD	; 221
+  52:	2f 7d       	andi	r18, 0xDF	; 223
+  54:	21 7d       	andi	r18, 0xD1	; 209
+  56:	12 7d       	andi	r17, 0xD2	; 210
+  58:	04 7d       	andi	r16, 0xD4	; 212
+  5a:	f5 7c       	andi	r31, 0xC5	; 197
+  5c:	e7 7c       	andi	r30, 0xC7	; 199
+  5e:	d8 7c       	andi	r29, 0xC8	; 200
+  60:	ca 7c       	andi	r28, 0xCA	; 202
+  62:	bc 7c       	andi	r27, 0xCC	; 204
+  64:	ad 7c       	andi	r26, 0xCD	; 205
+  66:	9f 7c       	andi	r25, 0xCF	; 207
+  68:	90 7c       	andi	r25, 0xC0	; 192
+  6a:	82 7c       	andi	r24, 0xC2	; 194
+  6c:	74 7c       	andi	r23, 0xC4	; 196
+  6e:	65 7c       	andi	r22, 0xC5	; 197
+  70:	57 7c       	andi	r21, 0xC7	; 199
+  72:	48 7c       	andi	r20, 0xC8	; 200
+  74:	3a 7c       	andi	r19, 0xCA	; 202
+  76:	2c 7c       	andi	r18, 0xCC	; 204
+  78:	1d 7c       	andi	r17, 0xCD	; 205
+  7a:	0f 7c       	andi	r16, 0xCF	; 207
+  7c:	01 7c       	andi	r16, 0xC1	; 193
+  7e:	f2 7b       	andi	r31, 0xB2	; 178
+  80:	e4 7b       	andi	r30, 0xB4	; 180
+  82:	d6 7b       	andi	r29, 0xB6	; 182
+  84:	c8 7b       	andi	r28, 0xB8	; 184
+  86:	b9 7b       	andi	r27, 0xB9	; 185
+  88:	ab 7b       	andi	r26, 0xBB	; 187
+  8a:	9d 7b       	andi	r25, 0xBD	; 189
+  8c:	8e 7b       	andi	r24, 0xBE	; 190
+  8e:	80 7b       	andi	r24, 0xB0	; 176
+  90:	72 7b       	andi	r23, 0xB2	; 178
+  92:	64 7b       	andi	r22, 0xB4	; 180
+  94:	55 7b       	andi	r21, 0xB5	; 181
+  96:	47 7b       	andi	r20, 0xB7	; 183
+  98:	39 7b       	andi	r19, 0xB9	; 185
+  9a:	2b 7b       	andi	r18, 0xBB	; 187
+  9c:	1c 7b       	andi	r17, 0xBC	; 188
+  9e:	0e 7b       	andi	r16, 0xBE	; 190
+  a0:	00 7b       	andi	r16, 0xB0	; 176
+  a2:	41 82       	std	Z+1, r4	; 0x01
+  a4:	32 82       	std	Z+2, r3	; 0x02
+  a6:	23 82       	std	Z+3, r2	; 0x03
+  a8:	14 82       	std	Z+4, r1	; 0x04
+  aa:	05 82       	std	Z+5, r0	; 0x05
+  ac:	f6 81       	ldd	r31, Z+6	; 0x06
+  ae:	e7 81       	ldd	r30, Z+7	; 0x07
+  b0:	d8 81       	ld	r29, Y
+  b2:	c9 81       	ldd	r28, Y+1	; 0x01
+  b4:	ba 81       	ldd	r27, Y+2	; 0x02
+  b6:	ab 81       	ldd	r26, Y+3	; 0x03
+  b8:	9c 81       	ldd	r25, Y+4	; 0x04
+  ba:	8d 81       	ldd	r24, Y+5	; 0x05
+  bc:	7e 81       	ldd	r23, Y+6	; 0x06
+  be:	6f 81       	ldd	r22, Y+7	; 0x07
+  c0:	60 81       	ld	r22, Z
+  c2:	51 81       	ldd	r21, Z+1	; 0x01
+  c4:	42 81       	ldd	r20, Z+2	; 0x02
+  c6:	34 81       	ldd	r19, Z+4	; 0x04
+  c8:	25 81       	ldd	r18, Z+5	; 0x05
+  ca:	16 81       	ldd	r17, Z+6	; 0x06
+  cc:	07 81       	ldd	r16, Z+7	; 0x07
+  ce:	f8 80       	ld	r15, Y
+  d0:	e9 80       	ldd	r14, Y+1	; 0x01
+  d2:	da 80       	ldd	r13, Y+2	; 0x02
+  d4:	cb 80       	ldd	r12, Y+3	; 0x03
+  d6:	bc 80       	ldd	r11, Y+4	; 0x04
+  d8:	ad 80       	ldd	r10, Y+5	; 0x05
+  da:	9f 80       	ldd	r9, Y+7	; 0x07
+  dc:	90 80       	ld	r9, Z
+  de:	81 80       	ldd	r8, Z+1	; 0x01
+  e0:	72 80       	ldd	r7, Z+2	; 0x02
+  e2:	63 80       	ldd	r6, Z+3	; 0x03
+  e4:	54 80       	ldd	r5, Z+4	; 0x04
+  e6:	46 80       	ldd	r4, Z+6	; 0x06
+  e8:	37 80       	ldd	r3, Z+7	; 0x07
+  ea:	28 80       	ld	r2, Y
+  ec:	19 80       	ldd	r1, Y+1	; 0x01
+  ee:	0a 80       	ldd	r0, Y+2	; 0x02
+  f0:	fc 7f       	andi	r31, 0xFC	; 252
+  f2:	ed 7f       	andi	r30, 0xFD	; 253
+  f4:	de 7f       	andi	r29, 0xFE	; 254
+  f6:	cf 7f       	andi	r28, 0xFF	; 255
+  f8:	c0 7f       	andi	r28, 0xF0	; 240
+  fa:	b2 7f       	andi	r27, 0xF2	; 242
+  fc:	a3 7f       	andi	r26, 0xF3	; 243
+  fe:	94 7f       	andi	r25, 0xF4	; 244
+ 100:	85 7f       	andi	r24, 0xF5	; 245
+ 102:	77 7f       	andi	r23, 0xF7	; 247
+ 104:	68 7f       	andi	r22, 0xF8	; 248
+ 106:	59 7f       	andi	r21, 0xF9	; 249
+ 108:	4b 7f       	andi	r20, 0xFB	; 251
+ 10a:	3c 7f       	andi	r19, 0xFC	; 252
+ 10c:	2d 7f       	andi	r18, 0xFD	; 253
+ 10e:	1f 7f       	andi	r17, 0xFF	; 255
+ 110:	10 7f       	andi	r17, 0xF0	; 240
+ 112:	01 7f       	andi	r16, 0xF1	; 241
+ 114:	f2 7e       	andi	r31, 0xE2	; 226
+ 116:	e4 7e       	andi	r30, 0xE4	; 228
+ 118:	d5 7e       	andi	r29, 0xE5	; 229
+ 11a:	c7 7e       	andi	r28, 0xE7	; 231
+ 11c:	b8 7e       	andi	r27, 0xE8	; 232
+ 11e:	a9 7e       	andi	r26, 0xE9	; 233
+ 120:	9b 7e       	andi	r25, 0xEB	; 235
+
+00000122 <scale11>:
+ 122:	13 86 04 86 f4 85 e5 85 d5 85 c6 85 b6 85 a7 85     ................
+ 132:	97 85 88 85 78 85 69 85 5a 85 4a 85 3b 85 2b 85     ....x.i.Z.J.;.+.
+ 142:	1c 85 0d 85 fd 84 ee 84 df 84 cf 84 c0 84 b1 84     ................
+ 152:	a1 84 92 84 83 84 73 84 64 84 55 84 45 84 36 84     ......s.d.U.E.6.
+ 162:	27 84 18 84 08 84 f9 83 ea 83 db 83 cb 83 bc 83     '...............
+ 172:	ad 83 9e 83 8f 83 7f 83 70 83 61 83 52 83 43 83     ........p.a.R.C.
+ 182:	34 83 24 83 15 83 06 83 f7 82 e8 82 d9 82 ca 82     4.$.............
+ 192:	ba 82 ab 82 9c 82 8d 82 7e 82 6f 82 60 82 51 82     ........~.o.`.Q.
+ 1a2:	01 8a f1 89 e1 89 d1 89 c1 89 b1 89 a1 89 91 89     ................
+ 1b2:	81 89 72 89 62 89 52 89 42 89 32 89 22 89 12 89     ..r.b.R.B.2."...
+ 1c2:	03 89 f3 88 e3 88 d3 88 c3 88 b4 88 a4 88 94 88     ................
+ 1d2:	84 88 74 88 65 88 55 88 45 88 35 88 26 88 16 88     ..t.e.U.E.5.&...
+ 1e2:	06 88 f7 87 e7 87 d7 87 c7 87 b8 87 a8 87 98 87     ................
+ 1f2:	89 87 79 87 69 87 5a 87 4a 87 3b 87 2b 87 1b 87     ..y.i.Z.J.;.+...
+ 202:	0c 87 fc 86 ed 86 dd 86 cd 86 be 86 ae 86 9f 86     ................
+ 212:	8f 86 80 86 70 86 61 86 51 86 41 86 32 86 22 86     ....p.a.Q.A.2.".
+
+00000222 <scale10>:
+ 222:	0c 8e fc 8d eb 8d db 8d ca 8d ba 8d aa 8d 99 8d     ................
+ 232:	89 8d 79 8d 68 8d 58 8d 48 8d 37 8d 27 8d 17 8d     ..y.h.X.H.7.'...
+ 242:	06 8d f6 8c e6 8c d6 8c c5 8c b5 8c a5 8c 95 8c     ................
+ 252:	84 8c 74 8c 64 8c 54 8c 43 8c 33 8c 23 8c 13 8c     ..t.d.T.C.3.#...
+ 262:	03 8c f2 8b e2 8b d2 8b c2 8b b2 8b a2 8b 92 8b     ................
+ 272:	81 8b 71 8b 61 8b 51 8b 41 8b 31 8b 21 8b 11 8b     ..q.a.Q.A.1.!...
+ 282:	01 8b f1 8a e1 8a d1 8a c1 8a b1 8a a1 8a 91 8a     ................
+ 292:	81 8a 71 8a 61 8a 51 8a 41 8a 31 8a 21 8a 11 8a     ..q.a.Q.A.1.!...
+ 2a2:	36 92 25 92 14 92 03 92 f2 91 e1 91 d0 91 bf 91     6.%.............
+ 2b2:	af 91 9e 91 8d 91 7c 91 6b 91 5b 91 4a 91 39 91     ......|.k.[.J.9.
+ 2c2:	28 91 18 91 07 91 f6 90 e5 90 d5 90 c4 90 b3 90     (...............
+ 2d2:	a2 90 92 90 81 90 70 90 60 90 4f 90 3e 90 2e 90     ......p.`.O.>...
+ 2e2:	1d 90 0c 90 fc 8f eb 8f da 8f ca 8f b9 8f a9 8f     ................
+ 2f2:	98 8f 87 8f 77 8f 66 8f 56 8f 45 8f 35 8f 24 8f     ....w.f.V.E.5.$.
+ 302:	14 8f 03 8f f2 8e e2 8e d1 8e c1 8e b0 8e a0 8e     ................
+ 312:	90 8e 7f 8e 6f 8e 5e 8e 4e 8e 3d 8e 2d 8e 1c 8e     ....o.^.N.=.-...
+
+00000322 <scale9>:
+ 322:	7e 96 6d 96 5b 96 4a 96 39 96 27 96 16 96 04 96     ~.m.[.J.9.'.....
+ 332:	f3 95 e2 95 d1 95 bf 95 ae 95 9d 95 8b 95 7a 95     ..............z.
+ 342:	69 95 58 95 46 95 35 95 24 95 13 95 01 95 f0 94     i.X.F.5.$.......
+ 352:	df 94 ce 94 bd 94 ab 94 9a 94 89 94 78 94 67 94     ............x.g.
+ 362:	56 94 45 94 33 94 22 94 11 94 00 94 ef 93 de 93     V.E.3.".........
+ 372:	cd 93 bc 93 ab 93 9a 93 89 93 78 93 67 93 55 93     ..........x.g.U.
+ 382:	44 93 33 93 22 93 11 93 00 93 ef 92 df 92 ce 92     D.3."...........
+ 392:	bd 92 ac 92 9b 92 8a 92 79 92 68 92 57 92 46 92     ........y.h.W.F.
+ 3a2:	e7 9a d5 9a c3 9a b1 9a 9f 9a 8e 9a 7c 9a 6a 9a     ............|.j.
+ 3b2:	58 9a 46 9a 34 9a 23 9a 11 9a ff 99 ed 99 db 99     X.F.4.#.........
+ 3c2:	ca 99 b8 99 a6 99 94 99 83 99 71 99 5f 99 4d 99     ..........q._.M.
+ 3d2:	3c 99 2a 99 18 99 07 99 f5 98 e3 98 d2 98 c0 98     <.*.............
+ 3e2:	ae 98 9d 98 8b 98 79 98 68 98 56 98 45 98 33 98     ......y.h.V.E.3.
+ 3f2:	22 98 10 98 fe 97 ed 97 db 97 ca 97 b8 97 a7 97     "...............
+ 402:	95 97 84 97 72 97 61 97 4f 97 3e 97 2c 97 1b 97     ....r.a.O.>.,...
+ 412:	09 97 f8 96 e6 96 d5 96 c4 96 b2 96 a1 96 8f 96     ................
+
+00000422 <scale8>:
+ 422:	71 9f 5f 9f 4c 9f 3a 9f 27 9f 15 9f 03 9f f0 9e     q._.L.:.'.......
+ 432:	de 9e cc 9e b9 9e a7 9e 95 9e 82 9e 70 9e 5e 9e     ............p.^.
+ 442:	4b 9e 39 9e 27 9e 15 9e 02 9e f0 9d de 9d cc 9d     K.9.'...........
+ 452:	b9 9d a7 9d 95 9d 83 9d 71 9d 5e 9d 4c 9d 3a 9d     ........q.^.L.:.
+ 462:	28 9d 16 9d 04 9d f1 9c df 9c cd 9c bb 9c a9 9c     (...............
+ 472:	97 9c 85 9c 73 9c 61 9c 4f 9c 3c 9c 2a 9c 18 9c     ....s.a.O.<.*...
+ 482:	06 9c f4 9b e2 9b d0 9b be 9b ac 9b 9a 9b 88 9b     ................
+ 492:	76 9b 64 9b 53 9b 41 9b 2f 9b 1d 9b 0b 9b f9 9a     v.d.S.A./.......
+ 4a2:	1d a4 0a a4 f7 a3 e4 a3 d1 a3 be a3 ab a3 99 a3     ................
+ 4b2:	86 a3 73 a3 60 a3 4d a3 3a a3 27 a3 14 a3 02 a3     ..s.`.M.:.'.....
+ 4c2:	ef a2 dc a2 c9 a2 b6 a2 a4 a2 91 a2 7e a2 6b a2     ............~.k.
+ 4d2:	58 a2 46 a2 33 a2 20 a2 0e a2 fb a1 e8 a1 d5 a1     X.F.3. .........
+ 4e2:	c3 a1 b0 a1 9d a1 8b a1 78 a1 65 a1 53 a1 40 a1     ........x.e.S.@.
+ 4f2:	2d a1 1b a1 08 a1 f6 a0 e3 a0 d0 a0 be a0 ab a0     -...............
+ 502:	99 a0 86 a0 74 a0 61 a0 4f a0 3c a0 2a a0 17 a0     ....t.a.O.<.*...
+ 512:	05 a0 f2 9f e0 9f cd 9f bb 9f a8 9f 96 9f 83 9f     ................
+
+00000522 <scale7>:
+ 522:	ec a8 d8 a8 c5 a8 b1 a8 9e a8 8b a8 77 a8 64 a8     ............w.d.
+ 532:	50 a8 3d a8 29 a8 16 a8 02 a8 ef a7 dc a7 c8 a7     P.=.)...........
+ 542:	b5 a7 a2 a7 8e a7 7b a7 67 a7 54 a7 41 a7 2d a7     ......{.g.T.A.-.
+ 552:	1a a7 07 a7 f4 a6 e0 a6 cd a6 ba a6 a7 a6 93 a6     ................
+ 562:	80 a6 6d a6 5a a6 46 a6 33 a6 20 a6 0d a6 fa a5     ..m.Z.F.3. .....
+ 572:	e6 a5 d3 a5 c0 a5 ad a5 9a a5 87 a5 74 a5 60 a5     ............t.`.
+ 582:	4d a5 3a a5 27 a5 14 a5 01 a5 ee a4 db a4 c8 a4     M.:.'...........
+ 592:	b5 a4 a2 a4 8f a4 7c a4 69 a4 56 a4 43 a4 30 a4     ......|.i.V.C.0.
+ 5a2:	df ad cb ad b7 ad a3 ad 8f ad 7b ad 67 ad 53 ad     ..........{.g.S.
+ 5b2:	3f ad 2b ad 17 ad 03 ad ef ac db ac c7 ac b3 ac     ?.+.............
+ 5c2:	9f ac 8b ac 77 ac 63 ac 4f ac 3b ac 27 ac 14 ac     ....w.c.O.;.'...
+ 5d2:	00 ac ec ab d8 ab c4 ab b0 ab 9c ab 89 ab 75 ab     ..............u.
+ 5e2:	61 ab 4d ab 39 ab 26 ab 12 ab fe aa ea aa d7 aa     a.M.9.&.........
+ 5f2:	c3 aa af aa 9b aa 88 aa 74 aa 60 aa 4d aa 39 aa     ........t.`.M.9.
+ 602:	25 aa 12 aa fe a9 ea a9 d7 a9 c3 a9 b0 a9 9c a9     %...............
+ 612:	88 a9 75 a9 61 a9 4e a9 3a a9 27 a9 13 a9 00 a9     ..u.a.N.:.'.....
+
+00000622 <scale6>:
+ 622:	f7 b2 e2 b2 ce b2 b9 b2 a4 b2 90 b2 7b b2 67 b2     ............{.g.
+ 632:	52 b2 3d b2 29 b2 14 b2 00 b2 eb b1 d6 b1 c2 b1     R.=.)...........
+ 642:	ad b1 99 b1 84 b1 70 b1 5b b1 47 b1 32 b1 1e b1     ......p.[.G.2...
+ 652:	09 b1 f5 b0 e1 b0 cc b0 b8 b0 a3 b0 8f b0 7b b0     ..............{.
+ 662:	66 b0 52 b0 3d b0 29 b0 15 b0 00 b0 ec af d8 af     f.R.=.).........
+ 672:	c3 af af af 9b af 87 af 72 af 5e af 4a af 36 af     ........r.^.J.6.
+ 682:	21 af 0d af f9 ae e5 ae d0 ae bc ae a8 ae 94 ae     !...............
+ 692:	80 ae 6c ae 57 ae 43 ae 2f ae 1b ae 07 ae f3 ad     ..l.W.C./.......
+ 6a2:	35 b8 20 b8 0b b8 f6 b7 e0 b7 cb b7 b6 b7 a1 b7     5. .............
+ 6b2:	8c b7 76 b7 61 b7 4c b7 37 b7 22 b7 0c b7 f7 b6     ..v.a.L.7.".....
+ 6c2:	e2 b6 cd b6 b8 b6 a3 b6 8e b6 79 b6 64 b6 4f b6     ..........y.d.O.
+ 6d2:	3a b6 24 b6 0f b6 fa b5 e5 b5 d0 b5 bb b5 a6 b5     :.$.............
+ 6e2:	91 b5 7c b5 67 b5 53 b5 3e b5 29 b5 14 b5 ff b4     ..|.g.S.>.).....
+ 6f2:	ea b4 d5 b4 c0 b4 ab b4 96 b4 82 b4 6d b4 58 b4     ............m.X.
+ 702:	43 b4 2e b4 19 b4 05 b4 f0 b3 db b3 c6 b3 b1 b3     C...............
+ 712:	9d b3 88 b3 73 b3 5e b3 4a b3 35 b3 20 b3 0c b3     ....s.^.J.5. ...
+
+00000722 <scale5>:
+ 722:	9c bd 86 bd 70 bd 5a bd 44 bd 2f bd 19 bd 03 bd     ....p.Z.D./.....
+ 732:	ed bc d7 bc c1 bc ac bc 96 bc 80 bc 6a bc 55 bc     ............j.U.
+ 742:	3f bc 29 bc 13 bc fe bb e8 bb d2 bb bc bb a7 bb     ?.).............
+ 752:	91 bb 7b bb 66 bb 50 bb 3b bb 25 bb 0f bb fa ba     ..{.f.P.;.%.....
+ 762:	e4 ba cf ba b9 ba a3 ba 8e ba 78 ba 63 ba 4d ba     ..........x.c.M.
+ 772:	38 ba 22 ba 0d ba f7 b9 e2 b9 cc b9 b7 b9 a1 b9     8.".............
+ 782:	8c b9 76 b9 61 b9 4c b9 36 b9 21 b9 0b b9 f6 b8     ..v.a.L.6.!.....
+ 792:	e1 b8 cb b8 b6 b8 a1 b8 8b b8 76 b8 61 b8 4b b8     ..........v.a.K.
+ 7a2:	2a c3 14 c3 fd c2 e7 c2 d0 c2 ba c2 a3 c2 8d c2     *...............
+ 7b2:	76 c2 60 c2 49 c2 33 c2 1d c2 06 c2 f0 c1 d9 c1     v.`.I.3.........
+ 7c2:	c3 c1 ad c1 96 c1 80 c1 69 c1 53 c1 3d c1 26 c1     ........i.S.=.&.
+ 7d2:	10 c1 fa c0 e4 c0 cd c0 b7 c0 a1 c0 8a c0 74 c0     ..............t.
+ 7e2:	5e c0 48 c0 32 c0 1b c0 05 c0 ef bf d9 bf c3 bf     ^.H.2...........
+ 7f2:	ad bf 96 bf 80 bf 6a bf 54 bf 3e bf 28 bf 12 bf     ......j.T.>.(...
+ 802:	fc be e6 be d0 be ba be a4 be 8e be 78 be 62 be     ............x.b.
+ 812:	4c be 36 be 20 be 0a be f4 bd de bd c8 bd b2 bd     L.6. ...........
+
+00000822 <scale4>:
+ 822:	e2 c8 cb c8 b4 c8 9c c8 85 c8 6e c8 57 c8 40 c8     ..........n.W.@.
+ 832:	29 c8 12 c8 fa c7 e3 c7 cc c7 b5 c7 9e c7 87 c7     )...............
+ 842:	70 c7 59 c7 42 c7 2b c7 14 c7 fd c6 e6 c6 cf c6     p.Y.B.+.........
+ 852:	b8 c6 a1 c6 8a c6 73 c6 5c c6 45 c6 2e c6 18 c6     ......s.\.E.....
+ 862:	01 c6 ea c5 d3 c5 bc c5 a5 c5 8e c5 78 c5 61 c5     ............x.a.
+ 872:	4a c5 33 c5 1c c5 06 c5 ef c4 d8 c4 c1 c4 ab c4     J.3.............
+ 882:	94 c4 7d c4 67 c4 50 c4 39 c4 23 c4 0c c4 f5 c3     ..}.g.P.9.#.....
+ 892:	df c3 c8 c3 b1 c3 9b c3 84 c3 6e c3 57 c3 41 c3     ..........n.W.A.
+ 8a2:	c5 ce ad ce 95 ce 7d ce 65 ce 4e ce 36 ce 1e ce     ......}.e.N.6...
+ 8b2:	06 ce ee cd d7 cd bf cd a7 cd 8f cd 78 cd 60 cd     ............x.`.
+ 8c2:	48 cd 30 cd 19 cd 01 cd e9 cc d2 cc ba cc a2 cc     H.0.............
+ 8d2:	8b cc 73 cc 5b cc 44 cc 2c cc 15 cc fd cb e6 cb     ..s.[.D.,.......
+ 8e2:	ce cb b6 cb 9f cb 87 cb 70 cb 58 cb 41 cb 29 cb     ........p.X.A.).
+ 8f2:	12 cb fb ca e3 ca cc ca b4 ca 9d ca 85 ca 6e ca     ..............n.
+ 902:	57 ca 3f ca 28 ca 11 ca f9 c9 e2 c9 cb c9 b3 c9     W.?.(...........
+ 912:	9c c9 85 c9 6d c9 56 c9 3f c9 28 c9 10 c9 f9 c8     ....m.V.?.(.....
+
+00000922 <scale3>:
+ 922:	d4 d4 bb d4 a3 d4 8a d4 72 d4 59 d4 41 d4 28 d4     ........r.Y.A.(.
+ 932:	10 d4 f7 d3 df d3 c6 d3 ae d3 95 d3 7d d3 64 d3     ............}.d.
+ 942:	4c d3 34 d3 1b d3 03 d3 ea d2 d2 d2 ba d2 a1 d2     L.4.............
+ 952:	89 d2 71 d2 58 d2 40 d2 28 d2 10 d2 f7 d1 df d1     ..q.X.@.(.......
+ 962:	c7 d1 af d1 96 d1 7e d1 66 d1 4e d1 36 d1 1e d1     ......~.f.N.6...
+ 972:	05 d1 ed d0 d5 d0 bd d0 a5 d0 8d d0 75 d0 5d d0     ............u.].
+ 982:	45 d0 2c d0 14 d0 fc cf e4 cf cc cf b4 cf 9c cf     E.,.............
+ 992:	84 cf 6c cf 54 cf 3d cf 25 cf 0d cf f5 ce dd ce     ..l.T.=.%.......
+ 9a2:	11 db f7 da de da c5 da ab da 92 da 79 da 60 da     ............y.`.
+ 9b2:	46 da 2d da 14 da fb d9 e2 d9 c8 d9 af d9 96 d9     F.-.............
+ 9c2:	7d d9 64 d9 4b d9 32 d9 19 d9 00 d9 e6 d8 cd d8     }.d.K.2.........
+ 9d2:	b4 d8 9b d8 82 d8 69 d8 50 d8 37 d8 1e d8 05 d8     ......i.P.7.....
+ 9e2:	ec d7 d4 d7 bb d7 a2 d7 89 d7 70 d7 57 d7 3e d7     ..........p.W.>.
+ 9f2:	25 d7 0c d7 f4 d6 db d6 c2 d6 a9 d6 90 d6 78 d6     %.............x.
+ a02:	5f d6 46 d6 2d d6 15 d6 fc d5 e3 d5 ca d5 b2 d5     _.F.-...........
+ a12:	99 d5 80 d5 68 d5 4f d5 36 d5 1e d5 05 d5 ed d4     ....h.O.6.......
+
+00000a22 <scale2>:
+ a22:	7c e1 62 e1 48 e1 2e e1 14 e1 fa e0 e0 e0 c6 e0     |.b.H...........
+ a32:	ac e0 92 e0 78 e0 5e e0 44 e0 2a e0 10 e0 f7 df     ....x.^.D.*.....
+ a42:	dd df c3 df a9 df 8f df 75 df 5c df 42 df 28 df     ........u.\.B.(.
+ a52:	0e df f4 de db de c1 de a7 de 8e de 74 de 5a de     ............t.Z.
+ a62:	40 de 27 de 0d de f3 dd da dd c0 dd a7 dd 8d dd     @.'.............
+ a72:	73 dd 5a dd 40 dd 27 dd 0d dd f4 dc da dc c1 dc     s.Z.@.'.........
+ a82:	a7 dc 8e dc 74 dc 5b dc 41 dc 28 dc 0e dc f5 db     ....t.[.A.(.....
+ a92:	dc db c2 db a9 db 8f db 76 db 5d db 43 db 2a db     ........v.].C.*.
+ aa2:	17 e8 fd e7 e2 e7 c7 e7 ac e7 92 e7 77 e7 5c e7     ............w.\.
+ ab2:	41 e7 27 e7 0c e7 f1 e6 d7 e6 bc e6 a1 e6 87 e6     A.'.............
+ ac2:	6c e6 51 e6 37 e6 1c e6 02 e6 e7 e5 cc e5 b2 e5     l.Q.7...........
+ ad2:	97 e5 7d e5 62 e5 48 e5 2d e5 13 e5 f8 e4 de e4     ..}.b.H.-.......
+ ae2:	c4 e4 a9 e4 8f e4 74 e4 5a e4 40 e4 25 e4 0b e4     ......t.Z.@.%...
+ af2:	f1 e3 d6 e3 bc e3 a2 e3 87 e3 6d e3 53 e3 39 e3     ..........m.S.9.
+ b02:	1e e3 04 e3 ea e2 d0 e2 b5 e2 9b e2 81 e2 67 e2     ..............g.
+ b12:	4d e2 33 e2 19 e2 fe e1 e4 e1 ca e1 b0 e1 96 e1     M.3.............
+
+00000b22 <scale1>:
+ b22:	e4 ee c8 ee ad ee 91 ee 76 ee 5a ee 3f ee 23 ee     ........v.Z.?.#.
+ b32:	08 ee ec ed d1 ed b5 ed 9a ed 7e ed 63 ed 47 ed     ..........~.c.G.
+ b42:	2c ed 11 ed f5 ec da ec bf ec a3 ec 88 ec 6d ec     ,.............m.
+ b52:	51 ec 36 ec 1b ec ff eb e4 eb c9 eb ae eb 92 eb     Q.6.............
+ b62:	77 eb 5c eb 41 eb 26 eb 0b eb ef ea d4 ea b9 ea     w.\.A.&.........
+ b72:	9e ea 83 ea 68 ea 4d ea 32 ea 17 ea fc e9 e1 e9     ....h.M.2.......
+ b82:	c6 e9 ab e9 90 e9 75 e9 5a e9 3f e9 24 e9 09 e9     ......u.Z.?.$...
+ b92:	ee e8 d3 e8 b8 e8 9d e8 82 e8 67 e8 4d e8 32 e8     ..........g.M.2.
+ ba2:	e4 f5 c8 f5 ab f5 8f f5 72 f5 56 f5 3a f5 1d f5     ........r.V.:...
+ bb2:	01 f5 e5 f4 c9 f4 ac f4 90 f4 74 f4 58 f4 3b f4     ..........t.X.;.
+ bc2:	1f f4 03 f4 e7 f3 cb f3 ae f3 92 f3 76 f3 5a f3     ............v.Z.
+ bd2:	3e f3 22 f3 06 f3 ea f2 ce f2 b2 f2 96 f2 7a f2     >."...........z.
+ be2:	5e f2 42 f2 26 f2 0a f2 ee f1 d2 f1 b6 f1 9a f1     ^.B.&...........
+ bf2:	7e f1 62 f1 46 f1 2a f1 0e f1 f3 f0 d7 f0 bb f0     ~.b.F.*.........
+ c02:	9f f0 83 f0 68 f0 4c f0 30 f0 14 f0 f9 ef dd ef     ....h.L.0.......
+ c12:	c1 ef a5 ef 8a ef 6e ef 52 ef 37 ef 1b ef 00 ef     ......n.R.7.....
+
+00000c22 <__ctors_end>:
+ c22:	11 24       	eor	r1, r1
+ c24:	1f be       	out	0x3f, r1	; 63
+ c26:	cf e5       	ldi	r28, 0x5F	; 95
+ c28:	d2 e0       	ldi	r29, 0x02	; 2
+ c2a:	de bf       	out	0x3e, r29	; 62
+ c2c:	cd bf       	out	0x3d, r28	; 61
+
+00000c2e <__do_copy_data>:
+ c2e:	10 e0       	ldi	r17, 0x00	; 0
+ c30:	a0 e6       	ldi	r26, 0x60	; 96
+ c32:	b0 e0       	ldi	r27, 0x00	; 0
+ c34:	e0 e7       	ldi	r30, 0x70	; 112
+ c36:	fe e0       	ldi	r31, 0x0E	; 14
+ c38:	02 c0       	rjmp	.+4      	; 0xc3e <__do_copy_data+0x10>
+ c3a:	05 90       	lpm	r0, Z+
+ c3c:	0d 92       	st	X+, r0
+ c3e:	a8 37       	cpi	r26, 0x78	; 120
+ c40:	b1 07       	cpc	r27, r17
+ c42:	d9 f7       	brne	.-10     	; 0xc3a <__do_copy_data+0xc>
+
+00000c44 <__do_clear_bss>:
+ c44:	20 e0       	ldi	r18, 0x00	; 0
+ c46:	a8 e7       	ldi	r26, 0x78	; 120
+ c48:	b0 e0       	ldi	r27, 0x00	; 0
+ c4a:	01 c0       	rjmp	.+2      	; 0xc4e <.do_clear_bss_start>
+
+00000c4c <.do_clear_bss_loop>:
+ c4c:	1d 92       	st	X+, r1
+
+00000c4e <.do_clear_bss_start>:
+ c4e:	ac 37       	cpi	r26, 0x7C	; 124
+ c50:	b2 07       	cpc	r27, r18
+ c52:	e1 f7       	brne	.-8      	; 0xc4c <.do_clear_bss_loop>
+ c54:	59 d0       	rcall	.+178    	; 0xd08 <main>
+ c56:	0a c1       	rjmp	.+532    	; 0xe6c <_exit>
+
+00000c58 <__bad_interrupt>:
+ c58:	d3 c9       	rjmp	.-3162   	; 0x0 <__vectors>
+
+00000c5a <reset_com>:
+	sei();
+}
+
+void reset_com()
+{
+	USIDR = 0;																	// Reset data
+ c5a:	1f b8       	out	0x0f, r1	; 15
+	USISR &= ~((1<<USICNT0)|(1<<USICNT1)|(1<<USICNT2)|(1<<USICNT3));			// Reset input clock
+ c5c:	8e b1       	in	r24, 0x0e	; 14
+ c5e:	80 7f       	andi	r24, 0xF0	; 240
+ c60:	8e b9       	out	0x0e, r24	; 14
+	USISR |= (1<<USIOIF);														// & interrupt
+ c62:	76 9a       	sbi	0x0e, 6	; 14
+ c64:	08 95       	ret
+
+00000c66 <setup_com>:
+
+uint8_t cominn;
+
+void setup_com()
+{
+	cli();
+ c66:	f8 94       	cli
+	DDRA &= ~((1<<COM_DATA)|(1<<COM_CLOCK));
+ c68:	8a b3       	in	r24, 0x1a	; 26
+ c6a:	8f 7a       	andi	r24, 0xAF	; 175
+ c6c:	8a bb       	out	0x1a, r24	; 26
+	DDRB &= ~(1<<COM_ENABLE);
+ c6e:	b9 98       	cbi	0x17, 1	; 23
+	PCMSK1 |= (1<<COM_EN_INT);
+ c70:	80 b5       	in	r24, 0x20	; 32
+ c72:	82 60       	ori	r24, 0x02	; 2
+ c74:	80 bd       	out	0x20, r24	; 32
+	GIMSK |= (1<<PCIE1);
+ c76:	8b b7       	in	r24, 0x3b	; 59
+ c78:	80 62       	ori	r24, 0x20	; 32
+ c7a:	8b bf       	out	0x3b, r24	; 59
+	
+	cominn = 0;
+ c7c:	10 92 7a 00 	sts	0x007A, r1	; 0x80007a <cominn>
+	
+	reset_com();
+ c80:	ec df       	rcall	.-40     	; 0xc5a <reset_com>
+	USICR &= ~((1<<USICS0) | (1<<USICLK));											// Set input only, rising edge, and enable interrupt
+ c82:	8d b1       	in	r24, 0x0d	; 13
+ c84:	89 7f       	andi	r24, 0xF9	; 249
+ c86:	8d b9       	out	0x0d, r24	; 13
+	USICR |= (1<<USICS1) | (1<<USIOIE);											// Set input only, rising edge, and enable interrupt
+ c88:	8d b1       	in	r24, 0x0d	; 13
+ c8a:	88 64       	ori	r24, 0x48	; 72
+ c8c:	8d b9       	out	0x0d, r24	; 13
+	sei();
+ c8e:	78 94       	sei
+ c90:	08 95       	ret
+
+00000c92 <get_com>:
+	USISR |= (1<<USIOIF);														// & interrupt
+}
+
+uint8_t get_com()
+{
+	cli();
+ c92:	f8 94       	cli
+	uint8_t ret = cominn;
+ c94:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <cominn>
+	cominn = 0;
+ c98:	10 92 7a 00 	sts	0x007A, r1	; 0x80007a <cominn>
+	sei();
+ c9c:	78 94       	sei
+	return ret;
+}
+ c9e:	08 95       	ret
+
+00000ca0 <__vector_16>:
+
+ISR(USI_OVF_vect)
+{
+ ca0:	1f 92       	push	r1
+ ca2:	0f 92       	push	r0
+ ca4:	0f b6       	in	r0, 0x3f	; 63
+ ca6:	0f 92       	push	r0
+ ca8:	11 24       	eor	r1, r1
+ caa:	8f 93       	push	r24
+	if(!(PINB&(1<<COM_ENABLE)))
+ cac:	b1 99       	sbic	0x16, 1	; 22
+ cae:	03 c0       	rjmp	.+6      	; 0xcb6 <__vector_16+0x16>
+	{
+		cominn = USIDR;
+ cb0:	8f b1       	in	r24, 0x0f	; 15
+ cb2:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <cominn>
+	}
+}
+ cb6:	8f 91       	pop	r24
+ cb8:	0f 90       	pop	r0
+ cba:	0f be       	out	0x3f, r0	; 63
+ cbc:	0f 90       	pop	r0
+ cbe:	1f 90       	pop	r1
+ cc0:	18 95       	reti
+
+00000cc2 <__vector_3>:
+
+ISR(PCINT1_vect)
+{
+ cc2:	1f 92       	push	r1
+ cc4:	0f 92       	push	r0
+ cc6:	0f b6       	in	r0, 0x3f	; 63
+ cc8:	0f 92       	push	r0
+ cca:	11 24       	eor	r1, r1
+ ccc:	2f 93       	push	r18
+ cce:	3f 93       	push	r19
+ cd0:	4f 93       	push	r20
+ cd2:	5f 93       	push	r21
+ cd4:	6f 93       	push	r22
+ cd6:	7f 93       	push	r23
+ cd8:	8f 93       	push	r24
+ cda:	9f 93       	push	r25
+ cdc:	af 93       	push	r26
+ cde:	bf 93       	push	r27
+ ce0:	ef 93       	push	r30
+ ce2:	ff 93       	push	r31
+	reset_com();
+ ce4:	ba df       	rcall	.-140    	; 0xc5a <reset_com>
+ ce6:	ff 91       	pop	r31
+ ce8:	ef 91       	pop	r30
+ cea:	bf 91       	pop	r27
+ cec:	af 91       	pop	r26
+ cee:	9f 91       	pop	r25
+ cf0:	8f 91       	pop	r24
+ cf2:	7f 91       	pop	r23
+ cf4:	6f 91       	pop	r22
+ cf6:	5f 91       	pop	r21
+ cf8:	4f 91       	pop	r20
+ cfa:	3f 91       	pop	r19
+ cfc:	2f 91       	pop	r18
+ cfe:	0f 90       	pop	r0
+ d00:	0f be       	out	0x3f, r0	; 63
+ d02:	0f 90       	pop	r0
+ d04:	1f 90       	pop	r1
+ d06:	18 95       	reti
+
+00000d08 <main>:
+{
+	//
+	// Setup
+	//
+
+	setup_lyd();
+ d08:	13 d0       	rcall	.+38     	; 0xd30 <setup_lyd>
+	setup_com();
+ d0a:	ad df       	rcall	.-166    	; 0xc66 <setup_com>
+		}while(command == 0);
+		
+		
+		if(command<0x80)
+		{
+			playTone(command%12, command/12);
+ d0c:	cc e0       	ldi	r28, 0x0C	; 12
+    while (1) 
+    {
+		uint8_t command = 0;
+		do
+		{
+			command = get_com();
+ d0e:	c1 df       	rcall	.-126    	; 0xc92 <get_com>
+		}while(command == 0);
+ d10:	88 23       	and	r24, r24
+ d12:	e9 f3       	breq	.-6      	; 0xd0e <main+0x6>
+		
+		
+		if(command<0x80)
+ d14:	34 f0       	brlt	.+12     	; 0xd22 <main+0x1a>
+		{
+			playTone(command%12, command/12);
+ d16:	6c 2f       	mov	r22, r28
+ d18:	9d d0       	rcall	.+314    	; 0xe54 <__udivmodqi4>
+ d1a:	68 2f       	mov	r22, r24
+ d1c:	89 2f       	mov	r24, r25
+ d1e:	4c d0       	rcall	.+152    	; 0xdb8 <playTone>
+ d20:	f6 cf       	rjmp	.-20     	; 0xd0e <main+0x6>
+		}
+		else if(command==0x80)
+ d22:	80 38       	cpi	r24, 0x80	; 128
+ d24:	11 f4       	brne	.+4      	; 0xd2a <main+0x22>
+		{
+			stopTone();
+ d26:	52 d0       	rcall	.+164    	; 0xdcc <stopTone>
+ d28:	f2 cf       	rjmp	.-28     	; 0xd0e <main+0x6>
+		}
+		else
+		{
+			soundTone(command&0x7F);
+ d2a:	8f 77       	andi	r24, 0x7F	; 127
+ d2c:	22 d0       	rcall	.+68     	; 0xd72 <soundTone>
+ d2e:	ef cf       	rjmp	.-34     	; 0xd0e <main+0x6>
+
+00000d30 <setup_lyd>:
+uint8_t current_tone = 0;
+uint8_t current_octave = 0;
+
+void setup_lyd()
+{
+	cli();
+ d30:	f8 94       	cli
+	DDRA |= (1<<FLOPPY_ENABLE)|(1<<FLOPPY_MOTOR)|(1<<FLOPPY_DIR)|(1<<FLOPPY_STEP);	// Output pins to drive
+ d32:	8a b3       	in	r24, 0x1a	; 26
+ d34:	8e 62       	ori	r24, 0x2E	; 46
+ d36:	8a bb       	out	0x1a, r24	; 26
+	PORTA |= (1<<FLOPPY_ENABLE)|(1<<FLOPPY_MOTOR)|(1<<FLOPPY_DIR);
+ d38:	8b b3       	in	r24, 0x1b	; 27
+ d3a:	8e 60       	ori	r24, 0x0E	; 14
+ d3c:	8b bb       	out	0x1b, r24	; 27
+
+	TCCR1A |= (1<<COM1B1)|(1<<WGM11)|(1<<WGM10);			// Fast PWM-mode, low after compare till TOP
+ d3e:	8f b5       	in	r24, 0x2f	; 47
+ d40:	83 62       	ori	r24, 0x23	; 35
+ d42:	8f bd       	out	0x2f, r24	; 47
+	TCCR1A &= ~((1<<COM1B0));								// output to OC1B
+ d44:	8f b5       	in	r24, 0x2f	; 47
+ d46:	8f 7e       	andi	r24, 0xEF	; 239
+ d48:	8f bd       	out	0x2f, r24	; 47
+	TCCR1B |= (1<<CS11)|(1<<WGM12)|(1<<WGM13);				// Use OCR1A as TOP, Prescaler 16MHz/8
+ d4a:	8e b5       	in	r24, 0x2e	; 46
+ d4c:	8a 61       	ori	r24, 0x1A	; 26
+ d4e:	8e bd       	out	0x2e, r24	; 46
+
+	OCR1A = 0xFFFF;
+ d50:	8f ef       	ldi	r24, 0xFF	; 255
+ d52:	9f ef       	ldi	r25, 0xFF	; 255
+ d54:	9b bd       	out	0x2b, r25	; 43
+ d56:	8a bd       	out	0x2a, r24	; 42
+	OCR1B = 0xFF00;
+ d58:	80 e0       	ldi	r24, 0x00	; 0
+ d5a:	9f ef       	ldi	r25, 0xFF	; 255
+ d5c:	99 bd       	out	0x29, r25	; 41
+ d5e:	88 bd       	out	0x28, r24	; 40
+
+	TIMSK1 |= (1<<TOIE1);
+ d60:	60 9a       	sbi	0x0c, 0	; 12
+	
+	MCUCR &= ~((1<<ISC00)|(1<<ISC01));									// Interrupt on falling edge
+ d62:	85 b7       	in	r24, 0x35	; 53
+ d64:	8c 7f       	andi	r24, 0xFC	; 252
+ d66:	85 bf       	out	0x35, r24	; 53
+	GIMSK |= (1<<INT0);
+ d68:	8b b7       	in	r24, 0x3b	; 59
+ d6a:	80 64       	ori	r24, 0x40	; 64
+ d6c:	8b bf       	out	0x3b, r24	; 59
+
+	
+	sei();	
+ d6e:	78 94       	sei
+ d70:	08 95       	ret
+
+00000d72 <soundTone>:
+//
+// Note: bend_amount is 7-bit signed (-64 to 63)
+//
+void soundTone(uint8_t bend_amount)
+{
+	cli();
+ d72:	f8 94       	cli
+	TCNT1 = 0;
+ d74:	1d bc       	out	0x2d, r1	; 45
+ d76:	1c bc       	out	0x2c, r1	; 44
+	uint16_t count = (scale[current_tone][bend_amount])>>current_octave;
+ d78:	e0 91 79 00 	lds	r30, 0x0079	; 0x800079 <current_tone>
+ d7c:	f0 e0       	ldi	r31, 0x00	; 0
+ d7e:	ee 0f       	add	r30, r30
+ d80:	ff 1f       	adc	r31, r31
+ d82:	e0 5a       	subi	r30, 0xA0	; 160
+ d84:	ff 4f       	sbci	r31, 0xFF	; 255
+ d86:	20 81       	ld	r18, Z
+ d88:	91 81       	ldd	r25, Z+1	; 0x01
+ d8a:	e2 2f       	mov	r30, r18
+ d8c:	f9 2f       	mov	r31, r25
+ d8e:	e8 0f       	add	r30, r24
+ d90:	f1 1d       	adc	r31, r1
+ d92:	e8 0f       	add	r30, r24
+ d94:	f1 1d       	adc	r31, r1
+ d96:	80 81       	ld	r24, Z
+ d98:	91 81       	ldd	r25, Z+1	; 0x01
+ d9a:	00 90 78 00 	lds	r0, 0x0078	; 0x800078 <__data_end>
+ d9e:	02 c0       	rjmp	.+4      	; 0xda4 <soundTone+0x32>
+ da0:	96 95       	lsr	r25
+ da2:	87 95       	ror	r24
+ da4:	0a 94       	dec	r0
+ da6:	e2 f7       	brpl	.-8      	; 0xda0 <soundTone+0x2e>
+	OCR1A = count;
+ da8:	9b bd       	out	0x2b, r25	; 43
+ daa:	8a bd       	out	0x2a, r24	; 42
+	OCR1B = count-100;
+ dac:	84 56       	subi	r24, 0x64	; 100
+ dae:	91 09       	sbc	r25, r1
+ db0:	99 bd       	out	0x29, r25	; 41
+ db2:	88 bd       	out	0x28, r24	; 40
+	sei();
+ db4:	78 94       	sei
+ db6:	08 95       	ret
+
+00000db8 <playTone>:
+//
+// Spill en tone
+//
+void playTone(uint8_t tone, uint8_t oktav)
+{
+	current_tone = tone;
+ db8:	80 93 79 00 	sts	0x0079, r24	; 0x800079 <current_tone>
+	current_octave = oktav;
+ dbc:	60 93 78 00 	sts	0x0078, r22	; 0x800078 <__data_end>
+	soundTone(0);
+ dc0:	80 e0       	ldi	r24, 0x00	; 0
+ dc2:	d7 df       	rcall	.-82     	; 0xd72 <soundTone>
+	PORTA &= ~((1<<FLOPPY_ENABLE)|(1<<FLOPPY_MOTOR));
+ dc4:	8b b3       	in	r24, 0x1b	; 27
+ dc6:	89 7f       	andi	r24, 0xF9	; 249
+ dc8:	8b bb       	out	0x1b, r24	; 27
+ dca:	08 95       	ret
+
+00000dcc <stopTone>:
+//
+// Stopp spillende tone
+//
+void stopTone()
+{
+	PORTA |= (1<<FLOPPY_ENABLE)|(1<<FLOPPY_MOTOR);
+ dcc:	8b b3       	in	r24, 0x1b	; 27
+ dce:	86 60       	ori	r24, 0x06	; 6
+ dd0:	8b bb       	out	0x1b, r24	; 27
+ dd2:	08 95       	ret
+
+00000dd4 <__vector_8>:
+
+//
+// Interrupt på slutten av hvert klikk
+//
+ISR(TIM1_OVF_vect)
+{
+ dd4:	1f 92       	push	r1
+ dd6:	0f 92       	push	r0
+ dd8:	0f b6       	in	r0, 0x3f	; 63
+ dda:	0f 92       	push	r0
+ ddc:	11 24       	eor	r1, r1
+ dde:	8f 93       	push	r24
+	if(!(PINA&((1<<FLOPPY_ENABLE)|(1<<FLOPPY_MOTOR))))
+ de0:	89 b3       	in	r24, 0x19	; 25
+ de2:	86 70       	andi	r24, 0x06	; 6
+ de4:	71 f4       	brne	.+28     	; 0xe02 <__vector_8+0x2e>
+	{
+		stepcount++;
+ de6:	80 91 7b 00 	lds	r24, 0x007B	; 0x80007b <stepcount>
+ dea:	8f 5f       	subi	r24, 0xFF	; 255
+ dec:	80 93 7b 00 	sts	0x007B, r24	; 0x80007b <stepcount>
+		if(stepcount >= 160)
+ df0:	80 3a       	cpi	r24, 0xA0	; 160
+ df2:	20 f0       	brcs	.+8      	; 0xdfc <__vector_8+0x28>
+		{
+			stepcount = 0;
+ df4:	10 92 7b 00 	sts	0x007B, r1	; 0x80007b <stepcount>
+			PORTA |= (1<<FLOPPY_DIR);
+ df8:	db 9a       	sbi	0x1b, 3	; 27
+ dfa:	03 c0       	rjmp	.+6      	; 0xe02 <__vector_8+0x2e>
+		}
+		else if(stepcount == 80)
+ dfc:	80 35       	cpi	r24, 0x50	; 80
+ dfe:	09 f4       	brne	.+2      	; 0xe02 <__vector_8+0x2e>
+		{
+			PORTA &= ~(1<<FLOPPY_DIR);
+ e00:	db 98       	cbi	0x1b, 3	; 27
+		}
+	}
+}
+ e02:	8f 91       	pop	r24
+ e04:	0f 90       	pop	r0
+ e06:	0f be       	out	0x3f, r0	; 63
+ e08:	0f 90       	pop	r0
+ e0a:	1f 90       	pop	r1
+ e0c:	18 95       	reti
+
+00000e0e <__vector_1>:
+
+ISR(INT0_vect)
+{
+ e0e:	1f 92       	push	r1
+ e10:	0f 92       	push	r0
+ e12:	0f b6       	in	r0, 0x3f	; 63
+ e14:	0f 92       	push	r0
+ e16:	11 24       	eor	r1, r1
+ e18:	2f 93       	push	r18
+ e1a:	3f 93       	push	r19
+ e1c:	4f 93       	push	r20
+ e1e:	5f 93       	push	r21
+ e20:	6f 93       	push	r22
+ e22:	7f 93       	push	r23
+ e24:	8f 93       	push	r24
+ e26:	9f 93       	push	r25
+ e28:	af 93       	push	r26
+ e2a:	bf 93       	push	r27
+ e2c:	ef 93       	push	r30
+ e2e:	ff 93       	push	r31
+	stopTone();
+ e30:	cd df       	rcall	.-102    	; 0xdcc <stopTone>
+ e32:	ff 91       	pop	r31
+ e34:	ef 91       	pop	r30
+ e36:	bf 91       	pop	r27
+ e38:	af 91       	pop	r26
+ e3a:	9f 91       	pop	r25
+ e3c:	8f 91       	pop	r24
+ e3e:	7f 91       	pop	r23
+ e40:	6f 91       	pop	r22
+ e42:	5f 91       	pop	r21
+ e44:	4f 91       	pop	r20
+ e46:	3f 91       	pop	r19
+ e48:	2f 91       	pop	r18
+ e4a:	0f 90       	pop	r0
+ e4c:	0f be       	out	0x3f, r0	; 63
+ e4e:	0f 90       	pop	r0
+ e50:	1f 90       	pop	r1
+ e52:	18 95       	reti
+
+00000e54 <__udivmodqi4>:
+ e54:	99 1b       	sub	r25, r25
+ e56:	79 e0       	ldi	r23, 0x09	; 9
+ e58:	04 c0       	rjmp	.+8      	; 0xe62 <__udivmodqi4_ep>
+
+00000e5a <__udivmodqi4_loop>:
+ e5a:	99 1f       	adc	r25, r25
+ e5c:	96 17       	cp	r25, r22
+ e5e:	08 f0       	brcs	.+2      	; 0xe62 <__udivmodqi4_ep>
+ e60:	96 1b       	sub	r25, r22
+
+00000e62 <__udivmodqi4_ep>:
+ e62:	88 1f       	adc	r24, r24
+ e64:	7a 95       	dec	r23
+ e66:	c9 f7       	brne	.-14     	; 0xe5a <__udivmodqi4_loop>
+ e68:	80 95       	com	r24
+ e6a:	08 95       	ret
+
+00000e6c <_exit>:
+ e6c:	f8 94       	cli
+
+00000e6e <__stop_program>:
+ e6e:	ff cf       	rjmp	.-2      	; 0xe6e <__stop_program>

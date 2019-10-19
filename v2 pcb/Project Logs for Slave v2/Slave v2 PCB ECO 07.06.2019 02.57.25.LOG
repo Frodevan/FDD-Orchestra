@@ -1,0 +1,4 @@
+Added Component: Designator=CLK(MEDHOLE)
+Change Net Name : Old Net Name=NetDI_1 New Net Name=NetJ2_4
+Added Member To Class: ClassName=Slave v2 Member=Component CLK BigHole
+Added Room: Name=Slave v2

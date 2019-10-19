@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=U1 NewDesignator=U?
+Added Pin To Net: NetName=Net26_1 Pin=26-1
+Added Member To Class: ClassName=Master v2 Member=Component U? ATMEGA168V-10AI
+Added Member To Class: ClassName=Master v2 Member=Component U? ATMEGA168V-10AI
+Added Member To Class: ClassName=Master v2 Member=Component U? ATMEGA168V-10AI
+Added Room: Name=Master v2

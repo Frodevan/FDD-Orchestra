@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetJ1_5 Pin=RESET-1
+Change Component Designator: OldDesignator=GND NewDesignator=GND2
+Added Member To Class: ClassName=Master v2 Member=Component GND2 BigHole
+Added Room: Name=Master v2

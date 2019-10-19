@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator= NewDesignator=P3
+Added Component: Designator=P4(MEDHOLE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetP4_1 Pin=P4-1
+Added Pin To Net: NetName=NetP4_1 Pin=U1-6
+Added Net: Name=NetP4_1
+Added Member To Class: ClassName=Slave v2 Member=Component P4 BigHole
+Added Room: Name=Slave v2
