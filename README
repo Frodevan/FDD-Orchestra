@@ -1,0 +1,9 @@
+To operate the orchestra, you need a MIDI-to-Serial bridge, and a way of playing MIDI files over this bridge.
+
+Recomended programs:
+
+http://projectgus.github.io/hairless-midiserial/	Hairless MIDI-to-Serial bridge
+https://www.tobias-erichsen.de/software/loopmidi.html	loopMIDI virtual MIDI-port
+http://www.vanbasco.com/				VanBasco's MIDI-Player
+
+Serial port is 56000 baud, 8 bits, no parity.
